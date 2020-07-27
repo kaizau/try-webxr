@@ -39,6 +39,7 @@ Others
 
 Frameworks tend to share similar concepts:
 
+```
 Scenes
 Geometry
 Materials / Lighting
@@ -51,7 +52,7 @@ Interactions
 State Machines
 Render Loop
 etc.
-...
+```
 
 Put it all together? And you get a sweet, immersive experience.
 
