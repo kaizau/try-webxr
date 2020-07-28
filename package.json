@@ -1,0 +1,11 @@
+{
+  "name": "try-webxr",
+  "version": "0.0.1",
+  "description": "Resources for the Aug 2020 WebXR meetup.",
+  "homepage": "https://github.com/kaizau/try-webxr",
+  "repository": "github:kaizau/try-webxr",
+  "private": true,
+  "devDependencies": {
+    "reveal.js": "^4.0.2"
+  }
+}
