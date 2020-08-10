@@ -1,6 +1,6 @@
 # Build VR experiences with WebXR
 
-_Sunday August 23, 2020_
+_Sunday August 23, 2020 [@Mozilla TW](https://moztw.org/space/)_
 
 Have you ever thought about building your own virtual reality game or
 simulation?
