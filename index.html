@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Try WebXR</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+
+    <link rel="stylesheet" href="node_modules/reveal.js/dist/reset.css">
+    <link rel="stylesheet" href="node_modules/reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="node_modules/reveal.js/dist/theme/white.css" id="theme">
+    <link rel="stylesheet" href="node_modules/reveal.js/plugin/highlight/zenburn.css">
+    <style>
+      /* Slides */
+
+      .reveal .slides > section {
+        box-sizing: border-box;
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: left;
+      }
+
+      /* Elements */
+
+      .reveal h1, .reveal h2, .reveal h3 { text-transform: none; }
+
+      .reveal .emoji { font-size: 135%; }
+
+      .reveal pre,
+      .reveal table {
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      .reveal table th,
+      .reveal table td { border: 0; }
+
+      .reveal iframe {
+        height: 60%;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <section>
+          <h2>Goal:</h2>
+          <p>
+            Deploy a VR experience before you leave today <span class="emoji">🥅</span>
+          </p>
+        </section>
+
+        <section>
+          <h2>WebXR:</h2>
+          <p class="fragment">👓 create VR and AR experiences</p>
+          <p class="fragment">🤘 with open web technologies</p>
+          <p class="fragment">🚀 and deliver them through the browser</p>
+        </section>
+
+        <section>
+          <h2>How?</h2>
+          <p class="fragment">
+            Browsers already support <strong>WebGL</strong>…
+          </p>
+          <p class="fragment">
+            a JavaScript API for rendering 3D graphics on a
+            <code>&lt;canvas&gt;</code>.
+          </p>
+          <p class="fragment">
+            <strong>WebXR</strong> defines an API for interacting with these 3D
+            scenes.
+          </p>
+        </section>
+
+        <section>
+          <h2>Why?</h2>
+          <p class="fragment">
+            <em>"Just a web page…"</em> so it can be viewed on any device
+            with a browser.
+          </p>
+          <p class="fragment">
+            <em>"Just a web page…"</em> so you can reuse existing tools and
+            skills.
+          </p>
+          <p class="fragment">
+            <em>"Just a web page…"</em> so it's easier to integrate with web
+            content and APIs.
+          </p>
+        </section>
+
+        <section>
+          <h2>Why not?</h2>
+          <p class="fragment">⚠️ Experimental technology.</p>
+          <p class="fragment">😢 Performance is worse than native.</p>
+          <p class="fragment">👾 Actually… it's a bit more than a web page.</p>
+        </section>
+
+        <section>
+          <h2>Framework NOT optional</h2>
+          <p class="fragment">😵 WebGL is complicated.</p>
+          <p class="fragment">👍 three.js makes WebGL simpler</p>
+          <p class="fragment">🤖 but is still low-level.</p>
+        </section>
+
+        <section>
+          <h2>Also…</h2>
+          <p class="fragment">🎩 Realistic 3D is hard.</p>
+          <p class="fragment">🚀 Physics is hard.</p>
+          <p class="fragment">😉 Why reinvent the wheel?</p>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+            ## WebXR Frameworks
+
+            &nbsp;          | &nbsp;
+            --------------- | ------
+            **A-Frame**     | Declarative VR "legos"
+            **Babylon.js**  | Open source 3D game engine
+            **PlayCanvas**  | Another open source 3D game engine
+            **Sumerian**    | AWS-flavored Babylon.js
+            **React360**    | Build 3D interfaces and menus
+          </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+            ## Beyond WebXR
+
+            &nbsp;          | &nbsp;
+            --------------- | ------
+            **Unity**       | C# game engine for broad support
+            **Unreal**      | C++ game engine for AAA graphics
+          </textarea>
+        </section>
+
+        <section data-auto-animate>
+          <h2>A-Frame</h2>
+          <p>"VR Legos." Custom elements that abstract three.js objects.</p>
+          <pre><code class="" data-trim>
+            <a-scene>
+              <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+              <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+              <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+              <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+              <a-sky color="#ECECEC"></a-sky>
+            </a-scene>
+          </pre></code>
+        </section>
+
+        <section data-auto-animate>
+          <h2>A-Frame</h2>
+          <p>🔌 Super simple to get started.</p>
+          <p>⚡️ Hundreds of plugins on NPM.</p>
+          <p>❤️ Supported by Mozilla.</p>
+        </section>
+
+        <section data-auto-animate>
+          <h2>Babylon.js</h2>
+          <p>Full game engine with physics, shaders, and more.</p>
+          <pre><code class="" data-trim>
+          var createScene = function() {
+            var scene = new BABYLON.Scene(engine);
+            var camera = new BABYLON.ArcRotateCamera(
+              "Camera", Math.PI / 2, Math.PI / 2, 2, BABYLON.Vector3.Zero(), scene
+            );
+            camera.attachControl(canvas, true);
+            var sphere = BABYLON.MeshBuilder.CreateSphere(
+              "sphere", { diameter: 2 }, scene
+            );
+            return scene;
+          };
+          </pre></code>
+        </section>
+
+        <section data-auto-animate>
+          <h2>Babylon.js</h2>
+          <p>🔋 "Batteries included" framework.</p>
+          <p>✨ Extensive docs and code playground.</p>
+          <p>❤️ Supported by Microsoft.</p>
+        </section>
+
+        <section>
+          <h2>Today's Format</h2>
+          <ol>
+            <li class="fragment">Create a Hello World in one or both</li>
+            <li class="fragment">Build something awesome</li>
+            <li class="fragment">Help each other out</li>
+          </ol>
+        </section>
+
+      </div>
+    </div>
+
+    <script src="node_modules/reveal.js/dist/reveal.js"></script>
+    <script src="node_modules/reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="node_modules/reveal.js/plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [ RevealMarkdown, RevealHighlight ]
+      });
+    </script>
+  </body>
+</html>
