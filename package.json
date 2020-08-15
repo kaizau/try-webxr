@@ -5,6 +5,9 @@
   "homepage": "https://github.com/kaizau/try-webxr",
   "repository": "github:kaizau/try-webxr",
   "private": true,
+  "scripts": {
+    "postinstall": "cp -R node_modules/reveal.js slides/"
+  },
   "devDependencies": {
     "reveal.js": "^4.0.2"
   }
