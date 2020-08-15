@@ -22,8 +22,23 @@ The goal is for every attendee to deploy a VR experience before they leave!
 
 Space will be limited to 35 RSVPs.
 
-Related Links:
+## Resources
 
+### A-Frame
 - https://aframe.io/
-- https://doc.babylonjs.com/how_to/webxr_experience_helpers
-- https://js13kgames.com/webxr
+- [Impressive Demo](https://aframe.io/examples/showcase/a-saturday-night/)
+- [Official tutorial](https://aframe.io/aframe-school/#/)
+- [Glitch starter template](https://glitch.com/~aframe)
+- [Components on npm](https://www.npmjs.com/search?q=aframe)
+
+### Babylon.js
+- https://babylonjs.com/
+- [Impressive Demo](https://playground.babylonjs.com/#3I55DK#0)
+- [Official tutorial](https://doc.babylonjs.com/babylon101/)
+- [Glitch starter template](https://glitch.com/~babylonjs-starter)
+
+### Other
+- [Glitch](https://glitch.com/) - Clone and deploy projects from your browser.
+  Great for learning and experimentation.
+- [JS13k](https://js13kgames.com/webxr) - Need motivation? Just so happens
+  there's a WebXR game competition that runs from Aug 13 to Sep 13...
