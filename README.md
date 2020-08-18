@@ -24,6 +24,14 @@ Space will be limited to 35 RSVPs.
 
 ## Resources
 
+### Dev Tools
+- WebXR Emulator
+  ([Firefox](https://addons.mozilla.org/en-US/firefox/addon/webxr-api-emulator/),
+  [Chrome](https://chrome.google.com/webstore/detail/webxr-api-emulator/mjddjgeghkdijejnciaefnkjmkafnnje))
+  for local browser testing.
+- [Glitch](https://glitch.com/) for simple experiments and previews. Clone and
+  deploy projects from your browser.
+
 ### A-Frame
 - https://aframe.io/
 - [Impressive Demo](https://aframe.io/examples/showcase/a-saturday-night/)
@@ -38,7 +46,5 @@ Space will be limited to 35 RSVPs.
 - [Glitch starter template](https://glitch.com/~babylonjs-starter)
 
 ### Other
-- [Glitch](https://glitch.com/) - Clone and deploy projects from your browser.
-  Great for learning and experimentation.
 - [JS13k](https://js13kgames.com/webxr) - Need motivation? Just so happens
   there's a WebXR game competition that runs from Aug 13 to Sep 13...
