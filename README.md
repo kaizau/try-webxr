@@ -57,5 +57,7 @@ Space will be limited to 35 RSVPs.
 
 ### Other
 
-- [JS13k](https://js13kgames.com/webxr) - Need motivation? Just so happens
-  there's a WebXR game competition that runs from Aug 13 to Sep 13...
+- [JS13kGames](https://js13kgames.com/webxr) for extra motivation? Just so
+  happens there's a WebXR game competition that runs from Aug 13 to Sep 13...
+- [Great writeup](https://toji.github.io/webxr-scene-optimization/) on
+  optimizing scenes and models for WebXR.
