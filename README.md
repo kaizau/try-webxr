@@ -7,7 +7,7 @@ simulation?
 
 This event's goal is to overview the latest in WebXR. Put simply, WebXR allows
 you to serve virtual (and augmented) reality content directly through the web
-browser!
+browser.
 
 Note: This is a hands-on event, not a lecture. We'll work independently and in
 small groups to build our own VR demos.
@@ -25,6 +25,7 @@ Space will be limited to 35 RSVPs.
 ## Resources
 
 ### Dev Tools
+
 - WebXR Emulator
   ([Firefox](https://addons.mozilla.org/en-US/firefox/addon/webxr-api-emulator/),
   [Chrome](https://chrome.google.com/webstore/detail/webxr-api-emulator/mjddjgeghkdijejnciaefnkjmkafnnje))
@@ -33,6 +34,7 @@ Space will be limited to 35 RSVPs.
   deploy projects from your browser.
 
 ### A-Frame
+
 - https://aframe.io/
 - [Impressive Demo](https://aframe.io/examples/showcase/a-saturday-night/)
 - [Official tutorial](https://aframe.io/aframe-school/#/)
@@ -40,11 +42,20 @@ Space will be limited to 35 RSVPs.
 - [Components on npm](https://www.npmjs.com/search?q=aframe)
 
 ### Babylon.js
+
 - https://babylonjs.com/
 - [Impressive Demo](https://playground.babylonjs.com/#3I55DK#0)
 - [Official tutorial](https://doc.babylonjs.com/babylon101/)
 - [Glitch starter template](https://glitch.com/~babylonjs-starter)
 
+### 3D Models
+
+- [Google Poly](https://poly.google.com) for free models.
+- [Sketchfab](https://sketchfab.com/) for free and paid models.
+- [Mixamo](https://www.mixamo.com/) for adding animation rigging to models.
+- [Blender](https://www.blender.org/) for editing and exporting models.
+
 ### Other
+
 - [JS13k](https://js13kgames.com/webxr) - Need motivation? Just so happens
   there's a WebXR game competition that runs from Aug 13 to Sep 13...
