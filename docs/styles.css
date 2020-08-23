@@ -1,0 +1,60 @@
+:root {
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+html, body {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Slides */
+
+.reveal {
+  color: hsl(200, 20%, 40%);
+  font-family: var(--font-family);
+}
+
+.reveal .backgrounds > .slide-background {
+  border: 25px solid hsl(200, 40%, 80%);
+}
+
+.reveal .controls {
+  bottom: 40px;
+  color: hsl(200, 40%, 40%);
+  right: 40px;
+}
+
+.reveal .slides > section {
+  box-sizing: border-box;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: left;
+}
+
+/* Elements */
+
+.reveal h1, .reveal h2, .reveal h3 {
+  color: hsl(200, 40%, 40%);
+  font-family: var(--font-family);
+  text-transform: none;
+}
+
+.reveal .emoji { font-size: 135%; }
+
+.reveal pre,
+.reveal table {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.reveal table th,
+.reveal table td { border: 0; }
+
+.reveal iframe {
+  height: 60%;
+  width: 100%;
+}
