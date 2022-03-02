@@ -9,6 +9,6 @@
     "postinstall": "cp -R node_modules/reveal.js docs/."
   },
   "devDependencies": {
-    "reveal.js": "^4.0.2"
+    "reveal.js": "^4.3.0"
   }
 }
